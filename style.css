@@ -42,7 +42,7 @@ body
 .menu-bar
 {
     height: 1000px;
-    width: 200px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -60,12 +60,14 @@ body
     text-shadow: 0 0 20px black;
 }
 
-#color
+.color
 {
     display: flex;
-    text-align: center;
+    text-align: right;
+    justify-content: end;
+    align-items: flex-end;
     font-size: 2rem;
-    color: rgb(58, 37, 37);
+    color: rgb(3, 2, 2);
     font-family: 'Indie Flower', cursive;
 }
 
@@ -181,6 +183,29 @@ body
 }
 
 .eraser-descr
+{
+    margin-bottom: 5px;
+    font-size: 2rem;
+    font-family: 'Indie Flower', cursive;
+}
+
+.slider-div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider
+{
+    width: 80%;
+    outline: none;
+    border-radius: 3rem;
+
+}
+
+.sliderText
 {
     margin-bottom: 5px;
     font-size: 2rem;

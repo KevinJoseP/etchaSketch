@@ -3,6 +3,7 @@ let colourIt = false;
 let lColor = "#000000"
 let lbgColor = "#FFFFFF"
 let eraseMode = false;
+let NumberOfRows = 50;
 function utilAddEventListenersToCont()
 {
 
@@ -59,9 +60,9 @@ function markCellonClick (e)
     this.style.backgroundColor = lColor;
 }
 
-createGrid(80);
+createGrid(NumberOfRows);
 const clear = document.querySelector('.clear-selection');
-clear.addEventListener('click', e => createGrid(80));
+clear.addEventListener('click', e => createGrid(NumberOfRows));
 
 const penColor = document.querySelector('#penColor');
 penColor.addEventListener('input', e => {
@@ -72,7 +73,7 @@ const bgColor = document.querySelector('#bgColor');
 bgColor.addEventListener('input', e => {
     lbgColor = bgColor.value;
     if (eraseMode)lColor = lbgColor;
-    createGrid(80);
+    createGrid(NumberOfRows);
 });
 
 const eraserMode = document.querySelector('#check');
@@ -91,3 +92,9 @@ eraserMode.addEventListener('input', e => {
     }
     console.log(lColor);
 });
+
+const slider = document.querySelector('#slider');
+slider.addEventListener('input', e => {
+    NumberOfRows =  slider.value;
+    createGrid(NumberOfRows);
+})
