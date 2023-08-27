@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link href="./style.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section id="main-section">
+        <div class="menu-bar">
+            <div id="title">
+                <div>etch</div>
+                <div>-a-</div>
+                <div>sketch</div>
+            </div>
+            <div id="color">
+                <label class="colorText" for="penColor">Pen Color</label>
+                <input type="color" id="penColor" name="penColor" value="#000000">
+            </div>
+            <div id="color">
+                <label class="colorText" for="bgColor">Bg Color</label>
+                <input type="color" id="bgColor" name="bgColor" value="#FFFFFF">
+            </div>
+            <div class="toggle-div">
+                <div class="eraser-descr">eraser mode</div>
+                <input type="checkbox" id="check">
+                <label for="check" class="check-label"></label>
+            </div>
+            <button class="clear-selection">clear</button>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>

@@ -1,0 +1,188 @@
+body
+{
+    height: 100vh;
+}
+#main-section
+{
+    background-color: rgb(134, 189, 132);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 30px rgb(68, 68, 68);
+}
+
+.cell
+{
+    width:1rem;
+    height: 1rem;
+    background-color: rgb(247, 247, 247);
+}
+
+.cell-row
+{
+    display: flex;
+    width: fit-content;
+}
+
+.cell:hover
+{
+    background-color: rgb(133, 32, 32);
+}
+
+.menu-bar
+{
+    height: 1000px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10rem;
+}
+
+#title
+{
+    font-family: 'Indie Flower', cursive;
+    font-size: 4rem;
+    text-align: right;
+    line-height: 2rem;
+    color: whitesmoke;
+    text-shadow: 0 0 20px black;
+}
+
+#color
+{
+    display: flex;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(58, 37, 37);
+    font-family: 'Indie Flower', cursive;
+}
+
+.colorText
+{
+    padding-right: 1rem;
+}
+
+#penColor
+{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    cursor: pointer;
+    height: 3rem;
+    padding: 0;
+    width: 3rem;
+    border: none;
+
+}
+
+#bgColor
+{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    cursor: pointer;
+    height: 3rem;
+    padding: 0;
+    width: 3rem;
+    border: none;
+
+}
+
+.clear-selection
+{
+    width: 6rem;
+    height: 3rem;
+    font-size: 2rem;
+    font-family: 'Indie Flower', cursive;
+    background-color: antiquewhite;
+    border-radius: 3rem;
+    box-shadow: 0 0 10px black;
+
+}
+
+#check.toggle {
+    opacity: 0;
+    position: absolute;
+}
+
+#check.toggle:checked + label
+{
+    color: red;
+}
+
+.switch
+{
+    font-size: 2rem;
+    font-family: 'Indie Flower', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-div
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.check-label
+{
+    background-color: antiquewhite;
+    width: 50px;
+    height: 25px;
+    border-radius: 200px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+
+
+}
+
+.check-label:before{
+    position: absolute;
+    content: '';
+    background-color: rgb(218, 168, 218);
+    width: 23px;
+    height: 23px;
+    border-radius: 200px;
+    margin: 1.1px;
+    transition: 0.3s;
+}
+#check:checked + .check-label
+{
+    background-color: rgb(68, 68, 190);
+}
+#check:checked + .check-label::before
+{
+    transform: translateX(25px);
+}
+
+#check
+{
+    display: none;
+}
+
+.eraser-descr
+{
+    margin-bottom: 5px;
+    font-size: 2rem;
+    font-family: 'Indie Flower', cursive;
+}
